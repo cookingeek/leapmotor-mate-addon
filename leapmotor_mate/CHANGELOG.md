@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.3
+
+- Statistics: "Consumption trend (6 weeks)" chart legend dates now shown as `DD/MM` (was `MM-DD`).
+- Installs leapmotor-mate `v1.0.3`.
+
 ## 1.0.2
 
 - New **Vehicle** page: tyre pressure, doors, windows, panoramic roof and temperatures (gradient status cards).
