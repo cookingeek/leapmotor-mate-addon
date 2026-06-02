@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.7
+
+- Language can now be changed from the Settings page (not only in the setup wizard), so already-installed users can switch between English, Italian and French.
+- Installs leapmotor-mate `v1.0.7`.
+
 ## 1.0.6
 
 - French language added (🇫🇷). The setup wizard now offers English, Italian and French, and the whole app is translated.
