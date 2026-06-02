@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.6
+
+- French language added (🇫🇷). The setup wizard now offers English, Italian and French, and the whole app is translated.
+- Installs leapmotor-mate `v1.0.6`.
+
 ## 1.0.5
 
 - Poller now self-recovers: if the account TLS certificate temp file disappears (poller stuck erroring for hours), it forces a re-login to re-create it. Fixes the add-on freezing until a manual restart.
