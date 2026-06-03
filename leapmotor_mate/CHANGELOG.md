@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0
+
+- Wallbox comparison is now scoped to **Home** charges, so it stays correct with multiple EVs on one wallbox and with public/away charging. The live panel shows session data only while the car is plugged in.
+- **Charge type confirmation**: a new charge shows a "To confirm" badge (with a "What type of charge?" prompt) instead of silently defaulting to Home; it enters the wallbox comparison only once confirmed as Home.
+- Installs leapmotor-mate `v1.2.0`.
+
 ## 1.1.1
 
 - Fix: the optional Wallbox feature now works in add-on mode. The Supervisor token wasn't reaching the app process (s6-overlay keeps it out of the service environment), so the add-on showed the standalone URL/token form and couldn't connect. It now connects to Home Assistant automatically — green status, no URL or token needed.
