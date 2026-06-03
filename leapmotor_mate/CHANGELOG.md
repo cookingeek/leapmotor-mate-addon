@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.5.0
+
+- **New Navigation page** 🧭 — search an address and send the destination straight to the car's built-in navigation; also shows the car's current address. Keyless address lookup by default (OpenStreetMap), with an optional provider + API key (Geoapify recommended — free, no card) for better house-number coverage.
+- Add a **"Free" charge type** (cost recorded as €0.00) and make charge-type labels language-neutral (🏠 Home · 🔌 AC · ⚡ DC · 🚀 HPC · 🆓 FREE).
+- Fix the "charges to confirm" banner sticking while a charge is in progress.
+- Auto-detect wallbox power/energy units (W→kW, Wh→kWh) across live, comparison and the power chart.
+- Installs leapmotor-mate `v1.5.0`.
+
 ## 1.4.0
 
 - Add German (Deutsch) as a fully supported UI language, selectable in Settings and the setup wizard. 🇩🇪
