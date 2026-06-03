@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.0
+
+- **ABRP live telemetry** (optional): forward live data to A Better Route Planner for live route planning — enable it and paste your ABRP token in Settings.
+- **MQTT → Home Assistant** (optional): publish the car to HA via MQTT Discovery as native entities (sensors, binary sensors, GPS tracker) plus command buttons and a climate switch. Configure a broker in Settings; TLS supported.
+- Installs leapmotor-mate `v1.3.0`.
+
 ## 1.2.0
 
 - Wallbox comparison is now scoped to **Home** charges, so it stays correct with multiple EVs on one wallbox and with public/away charging. The live panel shows session data only while the car is plugged in.
