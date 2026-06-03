@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.1
+
+- Lower the charge-detection threshold (3.0 A → 2.0 A) so low-power home charges are still detected.
+- Installs leapmotor-mate `v1.3.1`.
+
 ## 1.3.0
 
 - **ABRP live telemetry** (optional): forward live data to A Better Route Planner for live route planning — enable it and paste your ABRP token in Settings.
