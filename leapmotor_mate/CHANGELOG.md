@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.0
+
+- Add German (Deutsch) as a fully supported UI language, selectable in Settings and the setup wizard. 🇩🇪
+- Localize month names in the Trips / Charges / Statistics / Wallbox history tables (they were always shown in English).
+- Installs leapmotor-mate `v1.4.0`.
+
 ## 1.3.2
 
 - Fix tyre pressures shown on the wrong wheels (corrected B10 signal→wheel mapping).
