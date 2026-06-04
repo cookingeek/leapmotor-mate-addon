@@ -39,6 +39,16 @@ the web UI under **Settings** — no YAML required.
 - **Polling** — parked (default 30 s) and driving (default 10 s). Polling the
   Leapmotor cloud does **not** wake or drain the car.
 
+### Charge prices
+
+Set what each kWh costs on the dedicated **Charge Prices** page (💰 in the sidebar).
+Pick **Fixed (24h)** — one price per charge type (Home/AC/DC/HPC) — or **Time-of-use
+bands**: add time windows, choose the **days of the week** each covers (All / Weekdays
+/ Weekend shortcuts), and set a price per charge type for every band. Leave a price
+blank to use the base price, or `0` if it's free in that band. A session that spans
+two bands is split by its real power curve. Cost changes apply to **new charges
+only** — a charge's cost is frozen when you confirm its type.
+
 ### Wallbox (optional)
 
 If you charge at home and have a **wallbox already in Home Assistant** (Wallbox
@@ -69,6 +79,17 @@ and paste an API key under **Settings → Address lookup**:
 - **LocationIQ** or **TomTom**
 
 If a keyed provider errors, Mate automatically falls back to the keyless lookup.
+
+### MQTT → Home Assistant (optional)
+
+Publish the car to Home Assistant as **native entities** (alongside the Mate UI)
+via MQTT Discovery. In **Settings → MQTT**, enable it and enter your broker (host,
+port, username/password; TLS optional) — use **Test connection** to verify it before
+saving. Home Assistant auto-creates a *Leapmotor Mate* device with sensors, binary
+sensors (doors/windows/lock/charging), a GPS tracker, command buttons (lock/unlock,
+trunk, find car) and a climate switch. After a command the state updates immediately.
+The **topic prefix** scopes the device, so a second instance on a different prefix
+won't clash with this one.
 
 ## Data & persistence
 

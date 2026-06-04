@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.7.0
+
+- **New Charge Prices page with time-of-use tariffs.** Choose flat (24h) pricing or **time-of-use bands**: add time windows, pick the **days of the week** each applies to (All / Weekdays / Weekend), and set a price per charge type (Home/AC/DC/HPC) for each. Blank = base price, `0` = free. Each session is costed by splitting its energy across the bands it spans. Cost changes apply to **new charges only** (a charge's cost is frozen when you confirm its type). _(Requested in #7.)_
+- **MQTT: state now syncs right after a command.** Lock/unlock/trunk/climate sent over MQTT now update in Home Assistant immediately instead of waiting for the next poll (up to 30 s when parked).
+- **MQTT: fixed inverted lock state** — a locked car showed as "Unlocked" in Home Assistant; now correct.
+- **MQTT: "Test connection" button** in Settings → MQTT to verify the broker before saving.
+- **MQTT: topic prefix scopes the HA device** — run a second instance on a different prefix without clashing with the first (default prefix unchanged).
+- Installs leapmotor-mate `v1.7.0`.
+
 ## 1.6.3
 
 - Vehicle page redesigned with **Material Design icons** (doors, trunk, windows, roof, tyres, temperatures) instead of emoji — windows even switch between open/closed icons.
