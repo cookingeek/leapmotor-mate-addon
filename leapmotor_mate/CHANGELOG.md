@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.7.1
+
+- **Fix the alarming `Poll error: 'signal'` when the car is asleep.** If the cloud returned a status without live data (car in deep sleep / not reporting, or a brief cloud hiccup), the poller logged a scary error that looked like a crash. It's now handled cleanly — a clear "vehicle not reporting (asleep/unavailable)" message, a couple of retries, then a back-off — and recovers on its own once the car reports again. (#9)
+- Installs leapmotor-mate `v1.7.1`.
+
 ## 1.7.0
 
 - **New Charge Prices page with time-of-use tariffs.** Choose flat (24h) pricing or **time-of-use bands**: add time windows, pick the **days of the week** each applies to (All / Weekdays / Weekend), and set a price per charge type (Home/AC/DC/HPC) for each. Blank = base price, `0` = free. Each session is costed by splitting its energy across the bands it spans. Cost changes apply to **new charges only** (a charge's cost is frozen when you confirm its type). _(Requested in #7.)_
