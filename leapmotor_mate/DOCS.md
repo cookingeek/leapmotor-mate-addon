@@ -33,11 +33,15 @@ The add-on options only expose the log level:
 log_level: info
 ```
 
-Everything else (polling interval, charge price, language) is configured from
-the web UI under **Settings** — no YAML required.
+Everything else (polling interval, charge price, language, currency) is configured
+from the web UI under **Settings** — no YAML required.
 
 - **Polling** — parked (default 30 s) and driving (default 10 s). Polling the
   Leapmotor cloud does **not** wake or drain the car.
+- **Language & currency** — under **Settings → Language & Currency**, choose the UI
+  language and your display currency (€, $, £, CHF… 30 currencies). Every cost
+  reformats to it, with the right symbol placement and decimals; the number format
+  follows the selected language.
 
 ### Charge prices
 

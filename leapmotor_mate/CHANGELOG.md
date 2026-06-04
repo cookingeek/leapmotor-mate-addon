@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.8.0
+
+- **Customizable display currency.** The euro is no longer hardcoded — pick your currency from **30 world currencies** (€, $, £, CHF, kr, zł, Ft, ¥, …) in **Settings → Language & Currency**. Every cost (Overview, Charges, Wallbox, totals) reformats to it, with the correct symbol placement (`$12.50` vs `12,50 €`) and decimal digits per currency (2 for most, 0 for yen/forint/won). The number format follows the selected UI language. _(Requested in #10.)_
+- Installs leapmotor-mate `v1.8.0`.
+
 ## 1.7.1
 
 - **Fix the alarming `Poll error: 'signal'` when the car is asleep.** If the cloud returned a status without live data (car in deep sleep / not reporting, or a brief cloud hiccup), the poller logged a scary error that looked like a crash. It's now handled cleanly — a clear "vehicle not reporting (asleep/unavailable)" message, a couple of retries, then a back-off — and recovers on its own once the car reports again. (#9)
