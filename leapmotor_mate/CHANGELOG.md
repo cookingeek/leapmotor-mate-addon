@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.10.0
+
+- **New: tidier Settings.** The ABRP, MQTT and Wallbox integration cards now tuck their configuration fields behind a chevron, so integrations you don't use stay compact and the page is easier to scan. Each card shows an at-a-glance status dot in its header — MQTT does a live broker check (*Connected* / *Not connected*), ABRP shows its config state (*Active* / *Not configured* / *Off*). Your open/collapsed choice per card is saved on the server, so it's the same across reloads, reboots and devices.
+- **Changed: Leapmotor API library upgraded to 0.3.1** (from 0.1.4). Native T03 status handling and B10→C10 status-path mapping, so Mate no longer carries its own patches for those. Vehicle-data parsing is unchanged — trips, charges and the dashboard are unaffected.
+- Installs leapmotor-mate `v1.10.0`.
+
 ## 1.9.0
 
 - **New: Battery health page.** Estimates your pack's usable capacity and a state-of-health % over time. For each charge Mate integrates the **measured** energy delivered (voltage × current) and divides it by the SoC gained, so the estimate tracks real battery ageing instead of just echoing the configured capacity. Uses charges with a meaningful SoC rise; the headline figure is smoothed over recent charges. It's an estimate, not a lab measurement.

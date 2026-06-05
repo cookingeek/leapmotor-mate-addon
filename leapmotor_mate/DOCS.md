@@ -42,6 +42,10 @@ from the web UI under **Settings** — no YAML required.
   language and your display currency (€, $, £, CHF… 30 currencies). Every cost
   reformats to it, with the right symbol placement and decimals; the number format
   follows the selected language.
+- **Integration cards** — the ABRP, MQTT and Wallbox cards collapse their fields behind
+  a chevron, so integrations you don't use stay compact. A status dot in each header
+  shows their state at a glance (MQTT does a live broker check), and your open/collapsed
+  choice is saved on the server, so it's the same across reloads and devices.
 
 ### Charge prices
 
