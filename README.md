@@ -2,9 +2,15 @@
 
 Home Assistant add-on for [**LeapMotor Mate**](https://github.com/ProtossBlaster/leapmotor-mate) — trip tracking, charge logging, navigation and remote control for Leapmotor vehicles (B10 · C10 · T03).
 
+[![Open your Home Assistant instance and show the LeapMotor Mate add-on.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=5e44ad0d_leapmotor_mate&repository_url=https%3A%2F%2Fgithub.com%2FProtossBlaster%2Fleapmotor-mate-addon)
+
 > 🇮🇹 Versione italiana più sotto.
 
 ## Install
+
+**One-click:** click the **My Home Assistant** badge above — it opens *your* Home Assistant, adds this repository and jumps straight to the add-on. Then click **Install** → **Start**.
+
+Or add it manually:
 
 1. In Home Assistant go to **Settings → Add-ons → Add-on Store**.
 2. Click the **⋮** menu (top right) → **Repositories**.
@@ -32,6 +38,10 @@ The database and certificate are stored in the add-on's persistent `/data`, surv
 Add-on per [**LeapMotor Mate**](https://github.com/ProtossBlaster/leapmotor-mate) — tracciamento viaggi, registro ricariche, navigazione e controllo remoto per veicoli Leapmotor (B10 · C10 · T03).
 
 ### Installazione
+
+**Un clic:** clicca il badge **My Home Assistant** in alto — apre *il tuo* Home Assistant, aggiunge questo repository e ti porta direttamente all'add-on. Poi **Installa** → **Avvia**.
+
+Oppure manualmente:
 
 1. In Home Assistant vai su **Impostazioni → Add-on → Store**.
 2. Menu **⋮** (in alto a destra) → **Repository**.
