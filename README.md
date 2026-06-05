@@ -12,7 +12,7 @@ Home Assistant add-on for [**LeapMotor Mate**](https://github.com/ProtossBlaster
 
 Or add it manually:
 
-1. In Home Assistant go to **Settings → Add-ons → Add-on Store**.
+1. In Home Assistant go to **Settings → Apps → Install app** (before 2026.2: **Settings → Add-ons → Add-on Store**).
 2. Click the **⋮** menu (top right) → **Repositories**.
 3. Add this URL:
 
@@ -43,8 +43,8 @@ Add-on per [**LeapMotor Mate**](https://github.com/ProtossBlaster/leapmotor-mate
 
 Oppure manualmente:
 
-1. In Home Assistant vai su **Impostazioni → Add-on → Store**.
-2. Menu **⋮** (in alto a destra) → **Repository**.
+1. In Home Assistant vai su **Impostazioni → Applicazioni → Installa app** (prima della 2026.2: **Impostazioni → Add-on → Store**).
+2. Menu **⋮** (in alto a destra) → **Archivi digitali** (prima della 2026.2: **Repository**).
 3. Aggiungi questo URL:
 
    ```
