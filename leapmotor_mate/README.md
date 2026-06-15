@@ -9,7 +9,7 @@
 **Trip tracking, charge logging and remote control for Leapmotor vehicles** — a self-hosted,
 privacy-first companion. Think *TeslaMate*, for Leapmotor.
 
-Supported models: **B10 · C10 · T03** (European spec).
+Supported models: **B05 · B10 · C10 · T03** — full-electric (BEV) only, European spec (the Leapmotor lineup distributed by Stellantis/Leapmotor). Not for REEV / range-extender versions.
 
 ## Highlights
 
